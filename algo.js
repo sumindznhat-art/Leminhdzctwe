@@ -1,7 +1,7 @@
 /* SUNWIN VIP CORE - PROTECTED */
 (function(_w){
 "use strict";
-var _k="U1dWSVAyMDI1",_v=0x5F3A,_s=[];
+var _k="U1dWSVAyMDI1",_v=0x5F3A;
 function _h(s){var h=2166136261>>>0;for(var i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)>>>0}return h>>>0}
 function _f(s){
   var a=[],n=s.length,i,v;
@@ -79,10 +79,9 @@ function _run(nums,cau){
   var cf=Math.min(96,Math.round(55+df*0.9+k.c*0.15));
   return {tai:tp,xiu:xp,conf:cf,winner:tp>xp?"TÀI":"XỈU",cauType:k.y}
 }
-/* --- guard: chống tamper --- */
 function _chk(){
   var g=_k.length===12&&_v===0x5F3A;
-  if(!g){return{analyze:function(){return{tai:50,xiu:50,conf:0,winner:"?",cauType:"?"}}}}
+  if(!g)return{analyze:function(){return{tai:50,xiu:50,conf:0,winner:"?",cauType:"?"}}};
   return{analyze:_run}
 }
 _w._sw=Object.freeze(_chk());
