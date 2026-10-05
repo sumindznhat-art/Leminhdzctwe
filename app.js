@@ -38,12 +38,12 @@ $("analyzeBtn").onclick=function(){
     $("taiPct").textContent=r.tai+"%";
     $("xiuPct").textContent=r.xiu+"%";
     if(r.winner==="TÀI")$("cardTai").classList.add("win");else $("cardXiu").classList.add("win");
-    msg.textContent="🐻 "+r.winner+" • "+r.cauType+" • Tin cậy "+r.conf+"%";
+    msg.textContent="🐼 "+r.winner+" • "+r.cauType+" • Tin cậy "+r.conf+"%";
     msg.style.color=r.winner==="TÀI"?"#42a5f5":"#e3f2fd";
     hist.unshift({w:r.winner,c:r.conf});
     if(hist.length>12)hist.pop();
     renderHist();
-  },700);
+  },1200);
 };
 renderHist();
 })();
