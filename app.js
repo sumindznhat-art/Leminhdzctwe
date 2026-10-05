@@ -43,7 +43,7 @@ $("analyzeBtn").onclick=function(){
     hist.unshift({w:r.winner,c:r.conf});
     if(hist.length>12)hist.pop();
     renderHist();
-  },1200);
+  },700);
 };
 renderHist();
 })();
