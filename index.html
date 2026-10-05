@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="description" content="SUNWIN VIP TOOL - Thuật toán phân tích Tài Xỉu nâng cấp">
+<title>SUNWIN VIP TOOL</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<iframe id="game" src="https://web.sunwin.villas/" title="game"></iframe>
+
+<button id="toggleBtn">TOOL VIP</button>
+
+<div id="tool">
+  <div id="dragHandle">
+    <div id="toolTitle">⚡ SUNWIN VIP ⚡</div>
+    <button id="closeBtn" type="button">✕</button>
+  </div>
+
+  <input id="phienInput" class="inp" type="text" inputmode="numeric" maxlength="7" placeholder="NHẬP 7 SỐ" autocomplete="off">
+  <input id="cauInput" class="inp" type="text" maxlength="30" placeholder="CẦU T/X (VD: TXTXTX)" autocomplete="off">
+
+  <button id="analyzeBtn" type="button">PHÂN TÍCH</button>
+
+  <div id="resultGrid">
+    <div class="card tai" id="cardTai">
+      <div class="lbl">TÀI</div>
+      <div class="pct" id="taiPct">0%</div>
+    </div>
+    <div class="card xiu" id="cardXiu">
+      <div class="lbl">XỈU</div>
+      <div class="pct" id="xiuPct">0%</div>
+    </div>
+  </div>
+
+  <div id="statusMsg"></div>
+
+  <div id="historyBox">
+    <div id="histTitle">
+      <span>📜 LỊCH SỬ</span>
+      <span id="histCount">0</span>
+    </div>
+    <div id="histList"></div>
+  </div>
+</div>
+
+<script src="algorithm.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
